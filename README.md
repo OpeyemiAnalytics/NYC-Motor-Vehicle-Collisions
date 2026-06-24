@@ -102,7 +102,7 @@ and contributing factors to support data-driven road safety decisions.
    better incident reporting systems needed
 
 ## Dashboard Preview
-[<img width="1524" height="857" alt="image" src="https://github.com/user-attachments/assets/c548cf9f-7b00-4d57-9ddb-c0b505522a17" />]
+<img width="1524" height="857" alt="image" src="https://github.com/user-attachments/assets/c548cf9f-7b00-4d57-9ddb-c0b505522a17" />
 
 
 ## Author

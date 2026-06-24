@@ -23,10 +23,10 @@ and contributing factors to support data-driven road safety decisions.
 
 ## Data Cleaning Steps
 - Checked for duplicate records
-- Replaced null Contributing Factor Vehicle 1 → "Unspecified"
-- Replaced null Persons Injured → 0
-- Replaced null Borough → "Not Recorded"
-- Replaced null Street Name → "Not Recorded"
+- Replaced null Contributing Factor Vehicle 1 - "Unspecified"
+- Replaced null Persons Injured - 0
+- Replaced null Borough - "Not Recorded"
+- Replaced null Street Name - "Not Recorded"
 - Left Latitude, Longitude & Cross Street nulls as blank
   (location data cannot be imputed without introducing false information)
 - Extracted Month Name, Month Number from Crash Date

@@ -36,10 +36,24 @@ and contributing factors to support data-driven road safety decisions.
 - Created Day Name column (Sun-Sat) for cleaner visuals
 - Sorted months chronologically using Month Number
 - Sorted days Sun-Sat using Day Number
-- Created manual Victim Breakdown reference table containing 
-  aggregated Injured and Killed figures for Motorists, 
-  Pedestrians and Cyclists
 - Created % of Total Collisions measure for monthly analysis
+
+## Data Transformation
+
+To support interactive victim type analysis, the dataset was transformed in *Power Query* using the following steps:
+
+* *Preserved Raw Data:* - Created a duplicate of the original dataset to protect the raw source(Victim Breakdown)
+* *Unpivoted Columns:* - Transformed the victim-related columns (Motorists, Pedestrians and Cyclists for both Injured and Killed) into a long format.
+* *Parsed Attributes:* - Split the Attribute column into two distinct fields: Victim Type and Status (Injured or Killed).
+* *Standardized Values:* - Renamed the Value column to Total.
+
+This process generated a normalized table containing the following fields:
+* Borough
+* Victim Type
+* Status
+* Total
+
+> *Data Modeling Note:* A Borough lookup table was created using *DAX* to establish relationships between the original and transformed tables. This enables a single Borough slicer to filter all dashboard visuals consistently.
 
 ## Key Findings
 
@@ -102,7 +116,7 @@ and contributing factors to support data-driven road safety decisions.
    better incident reporting systems needed
 
 ## Dashboard Preview
-<img width="1524" height="857" alt="image" src="https://github.com/user-attachments/assets/c548cf9f-7b00-4d57-9ddb-c0b505522a17" />
+<img width="1527" height="858" alt="NYC Collisions Capstone Project Dashboard" src="https://github.com/user-attachments/assets/360bc3c1-cde5-47e7-95f8-23dcc9891d82" />
 
 
 ## Author
